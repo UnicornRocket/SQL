@@ -1,0 +1,21 @@
+CREATE TABLE Flora (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, color TEXT, size TEXT);
+
+INSERT INTO Flora VALUES (1, "Rose", 3, "red", "small");
+INSERT INTO Flora VALUES (2, "Daisy", 2, "white", "medium");
+INSERT INTO Flora VALUES (3, "Lilac", 2, "purple", "large");
+INSERT INTO Flora VALUES (4, "Lily", 1, "orange", "small");
+INSERT INTO Flora VALUES (5, "Geranium", 3, "purple", "medium");
+INSERT INTO Flora VALUES (6, "Bluebell", 3, "blue", "large");
+INSERT INTO Flora VALUES (7, "Tulip", 5, "yellow", "small");
+INSERT INTO Flora VALUES (8, "Sunflower", 3, "yellow", "medium");
+INSERT INTO Flora VALUES (9, "BabyBreath", 2, "white", "small");
+INSERT INTO Flora VALUES (10, "SnapDragon", 4, "purple", "medium");
+INSERT INTO Flora VALUES (11, "Lavender", 3, "purple", "small");
+INSERT INTO Flora VALUES (12, "MorningGlory", 5, "blue", "large");
+INSERT INTO Flora VALUES (13, "Aster", 2, "purple", "medium");
+INSERT INTO Flora VALUES (14, "Dandelion", 1, "white", "small");
+INSERT INTO Flora VALUES (15, "Wisteria", 4, "purple", "large");
+
+SELECT * FROM Flora WHERE color = "white";
+
+SELECT * FROM Flora ORDER BY price DESC;
