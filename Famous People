@@ -1,0 +1,37 @@
+/* Create table about the people and what they do here */
+
+CREATE TABLE famous_people (id INTEGER PRIMARY KEY, name TEXT, song TEXT, country TEXT);
+
+INSERT INTO famous_people (name,song,country) VALUES ("Taylor Swift", "Bad Blood", "United States");
+INSERT INTO famous_people (name,song,country) VALUES ("Harry Styles", "Watermelon Sugar", "United Kingdom");
+INSERT INTO famous_people (name, song, country) VALUES ("BTS", "Butter", "South Korea");
+INSERT INTO famous_people (name, song, country) VALUES ("Charlie Puth", "Light Switch", "United States");
+INSERT INTO famous_people (name, song, country) VALUES ("Bad Bunny", "Tarot", "Spain");
+INSERT INTO famous_people (name, song, country) VALUES ("Little Mix", "Hair", "United Kingdom");
+
+CREATE TABLE favorites (id INTEGER);
+
+INSERT INTO favorites VALUES (1);
+INSERT INTO favorites VALUES (2);
+INSERT INTO favorites VALUES (3);
+INSERT INTO favorites VALUES (4);
+INSERT INTO favorites VALUES (5);
+INSERT INTO favorites VALUES (6);
+
+SELECT famous_people.name AS "My Faves", famous_people.song AS "Best Song", famous_people.country AS "Home Country" FROM famous_people JOIN favorites ON favorites.id = famous_people.id;
+
+SELECT * FROM famous_people;
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
